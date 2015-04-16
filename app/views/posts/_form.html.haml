@@ -1,0 +1,13 @@
+.formwrapper
+	= simple_form_for @post do |f|
+		.input-group
+		= f.input :title
+		.input-group
+		= f.input :author
+		= f.input :image
+		.input-group
+		= f.input :link	
+		.input-group
+		= f.input :description, class: "form_description"
+
+		= f.button :submit, class: "button"

@@ -1,0 +1,70 @@
+.formwrapper{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	max-width: 300px;
+}
+
+input {
+  background: none;
+  border: solid 2px #21a1e1;
+  color: #21a1e1;
+  padding: 15px 40px;
+  font-size: 18px;
+  display: inline-block;
+  &:focus,
+  &:active {
+    outline: none;
+  }
+  &[type="text"],
+  &[type="email"],
+  &[type="password"] {
+    border: none;
+    text-align: center;
+    border-bottom: solid 2px #21a1e1;
+  }
+  &[type="submit"] {
+    &:active {
+      color: white;
+      background: #21a1e1;
+    }
+  }
+}
+
+label{
+	font: {
+	  weight: 700;
+	  style: italic;
+	  size: 18px;
+	  color: #999999;
+	};
+}
+
+#post_description{
+	width: 250px;
+	height: 300px;
+	border: none;
+	border-bottom: solid 2px #21a1e1;
+	&:active {
+	  outline: none;
+	  border: none;
+	}
+}
+
+#post_image{
+	border: none;
+}
+
+.input-group {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  input {
+    padding: 15px 0px;
+  }
+}
+
+input.password{
+  width:215px;
+}
